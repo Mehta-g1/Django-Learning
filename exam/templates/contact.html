@@ -1,11 +1,16 @@
-
-
 {% extends "menu.html" %}
 
+{% load examapp_tags %}
+
 {% block contact_content %}
+<p>{% today %}</p>
 <hr>
 <div class="container">
-    <table>
+    <blockquote>
+       {{quote | quotes}}
+    </blockquote>
+    <table border="1">
+        
         <tr>
             <th>Name:</th>
             <td> Vikash Kuamr Mehta</td>

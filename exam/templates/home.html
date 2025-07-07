@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website</title>
+    <link rel="stylesheet" href="{% static 'tablestyle.css' %}">
 </head>
+
 <body>
     <div class="container">
         <h1>My Website</h1>
@@ -18,4 +22,5 @@
     {% endblock %}
 
 </body>
+
 </html>

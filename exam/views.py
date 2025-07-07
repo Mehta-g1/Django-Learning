@@ -12,7 +12,8 @@ class Questions:
 # def about(requ)
 
 def contact(request) :
-    return render(request,'contact.html')
+    quote = "Water the root, enjoy the fruit !"
+    return render(request,'contact.html',{'quote':quote})
 
 def Home(request) :
     return render(request,'home.html')
