@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test </title>
+</head>
+
+<body>
+    
+    <div class="question">
+        {% for question in questions%}
+        <div class="question-statement">
+            {{question.que | upper}}
+        </div>
+        <div class="options">
+            <input type="radio" name="option" id="">{{question.a}}
+        </div>
+        <div class="options">
+            <input type="radio" name="option" id="">{{question.b}}
+        </div>
+        <div class="options">
+            <input type="radio" name="option" id="">{{question.c}}
+        </div>
+        <div class="options">
+            <input type="radio" name="option" id="">{{question.d}}
+        </div> <hr>
+        {% endfor %}
+        <div class="buttons">
+            <button>Submit</button>
+        </div>
+    </div>
+    
+</body>
+
+</html>
